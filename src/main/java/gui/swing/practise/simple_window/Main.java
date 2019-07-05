@@ -1,4 +1,4 @@
-package gui.swing.practise;
+package gui.swing.practise.simple_window;
 
 import javax.swing.*;
 

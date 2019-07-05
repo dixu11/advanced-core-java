@@ -1,4 +1,4 @@
-package gui.swing.practise;
+package gui.swing.practise.simple_window;
 
 import javax.swing.*;
 import java.awt.*;
@@ -56,16 +56,20 @@ public class Display  {
             @Override
             public void actionPerformed(ActionEvent e) {
                 tekst.append("Czołem!\n");
+                tekst.setBackground(getRandomColor());
+                zakoncz.setBackground(getRandomColor());
+                start.setBackground(getRandomColor());
             }
+
         });
 
         zakoncz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 tekst.setText("");
-                tekst.setBackground(getRandomColor());
-                zakoncz.setBackground(getRandomColor());
-                start.setBackground(getRandomColor());
+                tekst.setBackground(Color.WHITE);
+                zakoncz.setBackground(Color.WHITE);
+                start.setBackground(Color.WHITE);
             }
         });
     }
